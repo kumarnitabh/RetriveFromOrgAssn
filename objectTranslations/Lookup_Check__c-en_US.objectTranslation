@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Lookup Check</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Lookup Checks</value>
+    </caseValues>
+    <fields>
+        <label><!-- Looking for --></label>
+        <name>Looking_for__c</name>
+        <picklistValues>
+            <masterLabel>Bike</masterLabel>
+            <translation><!-- Bike --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bus</masterLabel>
+            <translation><!-- Bus --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Car</masterLabel>
+            <translation><!-- Car --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Train</masterLabel>
+            <translation><!-- Train --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lookup Check --></label>
+        <name>Lookup_Check__c</name>
+        <relationshipLabel><!-- Lookup Checks --></relationshipLabel>
+    </fields>
+    <layouts>
+        <layout>Lookup Check Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>
