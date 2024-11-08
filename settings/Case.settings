@@ -11,9 +11,9 @@
     <caseMergeInLightning>false</caseMergeInLightning>
     <closeCaseThroughStatusChange>false</closeCaseThroughStatusChange>
     <defaultCaseFeedLayoutOn>true</defaultCaseFeedLayoutOn>
-    <defaultCaseOwner>nitabh.kumar@fexle.com.training.prod</defaultCaseOwner>
+    <defaultCaseOwner>nitabsingh@resilient-goat-fpkh.com</defaultCaseOwner>
     <defaultCaseOwnerType>User</defaultCaseOwnerType>
-    <defaultCaseUser>nitabh.kumar@fexle.com.training.prod</defaultCaseUser>
+    <defaultCaseUser>nitabsingh@resilient-goat-fpkh.com</defaultCaseUser>
     <emailToCase>
         <enableEmailToCase>false</enableEmailToCase>
     </emailToCase>
