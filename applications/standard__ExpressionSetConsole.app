@@ -10,6 +10,7 @@
     <tabs>standard-DecisionTable</tabs>
     <tabs>standard-ExpressionSetTemplate</tabs>
     <tabs>standard-ExpressionSet</tabs>
+    <tabs>student__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
@@ -20,6 +21,9 @@
         </mappings>
         <mappings>
             <tab>standard-ExpressionSetTemplate</tab>
+        </mappings>
+        <mappings>
+            <tab>student__c</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>

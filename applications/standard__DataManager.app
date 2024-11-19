@@ -8,5 +8,6 @@
     <label>Data Manager</label>
     <navType>Standard</navType>
     <tabs>standard-AnalyticsDataManager</tabs>
+    <tabs>student__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

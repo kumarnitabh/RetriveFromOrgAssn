@@ -202,6 +202,9 @@
     <label>Feedback</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Session__c</columns>
+        <columns>Sessions__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>

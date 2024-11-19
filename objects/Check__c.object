@@ -157,7 +157,7 @@
         <fullName>Demo__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <label>Demo</label>
-        <referenceTo>Demo__c</referenceTo>
+        <referenceTo>student__c</referenceTo>
         <relationshipLabel>Checks</relationshipLabel>
         <relationshipName>Checks</relationshipName>
         <required>false</required>

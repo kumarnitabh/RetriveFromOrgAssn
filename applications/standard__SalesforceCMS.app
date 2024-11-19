@@ -11,6 +11,7 @@
     <tabs>standard-CmsChannel</tabs>
     <tabs>standard-CmsWorkspaces</tabs>
     <tabs>standard-CmsExperiences</tabs>
+    <tabs>student__c</tabs>
     <uiType>Lightning</uiType>
     <workspaceConfig>
         <mappings>
@@ -24,6 +25,9 @@
         </mappings>
         <mappings>
             <tab>standard-CmsWorkspaces</tab>
+        </mappings>
+        <mappings>
+            <tab>student__c</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>

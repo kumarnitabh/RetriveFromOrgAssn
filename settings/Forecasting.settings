@@ -219,6 +219,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -237,6 +241,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -289,11 +301,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -432,6 +447,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -450,6 +469,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -502,11 +529,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -649,6 +679,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -667,6 +701,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -720,11 +762,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -863,6 +908,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -881,6 +930,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -933,11 +990,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -1080,6 +1140,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1098,6 +1162,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -1151,11 +1223,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -1294,6 +1369,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1312,6 +1391,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -1364,11 +1451,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -1511,6 +1601,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1529,6 +1623,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -1582,11 +1684,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -1725,6 +1830,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1743,6 +1852,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -1795,11 +1912,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -1942,6 +2062,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -1960,6 +2084,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -2013,11 +2145,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -2156,6 +2291,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2174,6 +2313,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -2226,11 +2373,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -2373,6 +2523,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2391,6 +2545,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -2444,11 +2606,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>
@@ -2587,6 +2752,10 @@
             <label>Fiscal Period</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
+            <field>OPPORTUNITY.RECORDTYPE</field>
+            <label>Opportunity Record Type</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <label>Last Activity</label>
         </opportunityListFieldsLabelMappings>
@@ -2605,6 +2774,14 @@
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4b</field>
             <label>Delivery/Installation Status</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL0000095rXy</field>
+            <label>Discount Approved</label>
+        </opportunityListFieldsLabelMappings>
+        <opportunityListFieldsLabelMappings>
+            <field>00NdL000009CVkS</field>
+            <label>Discount Percent</label>
         </opportunityListFieldsLabelMappings>
         <opportunityListFieldsLabelMappings>
             <field>00NdL0000070z4c</field>
@@ -2657,11 +2834,14 @@
             <field>OPPORTUNITY.FISCAL_YEAR</field>
             <field>OPPORTUNITY.FISCAL_QUARTER</field>
             <field>OPPORTUNITY.FISCAL_PERIOD</field>
+            <field>OPPORTUNITY.RECORDTYPE</field>
             <field>OPPORTUNITY.LAST_ACTIVITY</field>
             <field>OPPORTUNITY.CREATED_DATE</field>
             <field>OPPORTUNITY.LAST_UPDATE</field>
             <field>00NdL0000070z4a</field>
             <field>00NdL0000070z4b</field>
+            <field>00NdL0000095rXy</field>
+            <field>00NdL000009CVkS</field>
             <field>00NdL0000070z4c</field>
             <field>00NdL0000070z4d</field>
             <field>00NdL0000070z4e</field>

@@ -10,6 +10,7 @@
     <tabs>standard-home</tabs>
     <tabs>standard-FlowRecord</tabs>
     <tabs>standard-FlowOrchestration</tabs>
+    <tabs>student__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>FlowsApp_UtilityBar</utilityBar>
 </CustomApplication>

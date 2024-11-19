@@ -181,6 +181,7 @@
     <tabs>standard-Case</tabs>
     <tabs>standard-Opportunity</tabs>
     <tabs>standard-Lead</tabs>
+    <tabs>student__c</tabs>
     <workspaceConfig>
         <mappings>
             <tab>standard-Account</tab>
@@ -199,6 +200,9 @@
         <mappings>
             <fieldName>AccountId</fieldName>
             <tab>standard-Opportunity</tab>
+        </mappings>
+        <mappings>
+            <tab>student__c</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>

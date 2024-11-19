@@ -13,4 +13,5 @@
     <tabs>standard-Solution</tabs>
     <tabs>standard-report</tabs>
     <tabs>standard-Dashboard</tabs>
+    <tabs>student__c</tabs>
 </CustomApplication>

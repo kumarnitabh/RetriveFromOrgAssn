@@ -8,5 +8,6 @@
     <label>LightningInstrumentation</label>
     <navType>Standard</navType>
     <tabs>standard-LightningInstrumentation</tabs>
+    <tabs>student__c</tabs>
     <uiType>Lightning</uiType>
 </CustomApplication>

@@ -9,6 +9,7 @@
     <navType>Console</navType>
     <tabs>standard-Product2</tabs>
     <tabs>standard-Pricebook2</tabs>
+    <tabs>student__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>RevenueCloudConsole_UtilityBar</utilityBar>
     <workspaceConfig>
@@ -17,6 +18,9 @@
         </mappings>
         <mappings>
             <tab>standard-Product2</tab>
+        </mappings>
+        <mappings>
+            <tab>student__c</tab>
         </mappings>
     </workspaceConfig>
 </CustomApplication>
