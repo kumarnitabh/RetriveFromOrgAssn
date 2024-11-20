@@ -152,9 +152,10 @@
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ReadWrite</externalSharingModel>
+    <externalSharingModel>Private</externalSharingModel>
     <fields>
         <fullName>Avg_Rating__c</fullName>
+        <externalId>false</externalId>
         <label>Avg Rating</label>
         <summarizedField>Feedback__c.Rating__c</summarizedField>
         <summaryForeignKey>Feedback__c.Sessions__c</summaryForeignKey>
@@ -165,6 +166,7 @@
     </fields>
     <fields>
         <fullName>Count_Attendee__c</fullName>
+        <externalId>false</externalId>
         <label>Count Attendee</label>
         <summaryForeignKey>Attendee__c.Training__c</summaryForeignKey>
         <summaryOperation>count</summaryOperation>
@@ -173,9 +175,21 @@
         <type>Summary</type>
     </fields>
     <fields>
-        <fullName>Location__c</fullName>
+        <fullName>Loaction__c</fullName>
+        <externalId>false</externalId>
+        <label>Loaction</label>
+        <length>15</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Locate__c</fullName>
         <displayLocationInDecimal>false</displayLocationInDecimal>
-        <label>Location</label>
+        <externalId>false</externalId>
+        <label>Locate</label>
         <required>false</required>
         <scale>2</scale>
         <trackHistory>false</trackHistory>
@@ -198,6 +212,7 @@
     </fields>
     <fields>
         <fullName>Record_value__c</fullName>
+        <externalId>false</externalId>
         <label>Session</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -208,40 +223,21 @@
             <valueSetDefinition>
                 <sorted>false</sorted>
                 <value>
-                    <fullName>1</fullName>
+                    <fullName>Active</fullName>
                     <default>false</default>
-                    <label>1</label>
+                    <label>Active</label>
                 </value>
                 <value>
-                    <fullName>2</fullName>
+                    <fullName>Inactive</fullName>
                     <default>false</default>
-                    <label>2</label>
-                </value>
-                <value>
-                    <fullName>3</fullName>
-                    <default>false</default>
-                    <label>3</label>
-                </value>
-                <value>
-                    <fullName>4</fullName>
-                    <default>false</default>
-                    <label>4</label>
-                </value>
-                <value>
-                    <fullName>5</fullName>
-                    <default>false</default>
-                    <label>5</label>
-                </value>
-                <value>
-                    <fullName>6</fullName>
-                    <default>false</default>
-                    <label>6</label>
+                    <label>Inactive</label>
                 </value>
             </valueSetDefinition>
         </valueSet>
     </fields>
     <fields>
         <fullName>Session_Date__c</fullName>
+        <externalId>false</externalId>
         <label>Session Date</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
@@ -250,6 +246,7 @@
     </fields>
     <fields>
         <fullName>Sum_feed__c</fullName>
+        <externalId>false</externalId>
         <label>Sum feed</label>
         <summaryForeignKey>Feedback__c.Sessions__c</summaryForeignKey>
         <summaryOperation>count</summaryOperation>
@@ -260,6 +257,12 @@
     <label>Training Session</label>
     <listViews>
         <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Count_Attendee__c</columns>
+        <columns>Record_value__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Loaction__c</columns>
+        <columns>OWNER.FIRST_NAME</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
@@ -277,15 +280,7 @@
         <picklistValues>
             <picklist>Record_value__c</picklist>
             <values>
-                <fullName>2</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>4</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>6</fullName>
+                <fullName>Active</fullName>
                 <default>false</default>
             </values>
         </picklistValues>
@@ -297,15 +292,7 @@
         <picklistValues>
             <picklist>Record_value__c</picklist>
             <values>
-                <fullName>1</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>3</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>5</fullName>
+                <fullName>Inactive</fullName>
                 <default>false</default>
             </values>
         </picklistValues>

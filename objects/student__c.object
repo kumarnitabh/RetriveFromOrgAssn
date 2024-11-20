@@ -149,54 +149,25 @@
     <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>false</enableSearch>
+    <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
-        <fullName>Attendee_lists__c</fullName>
+        <fullName>Attendance__c</fullName>
         <externalId>false</externalId>
-        <label>Attendee lists</label>
+        <label>Attendance</label>
+        <precision>3</precision>
         <required>false</required>
+        <scale>0</scale>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Picklist</type>
-        <valueSet>
-            <restricted>true</restricted>
-            <valueSetDefinition>
-                <sorted>false</sorted>
-                <value>
-                    <fullName>A</fullName>
-                    <default>false</default>
-                    <label>A</label>
-                </value>
-                <value>
-                    <fullName>B</fullName>
-                    <default>false</default>
-                    <label>B</label>
-                </value>
-                <value>
-                    <fullName>C</fullName>
-                    <default>false</default>
-                    <label>C</label>
-                </value>
-                <value>
-                    <fullName>D</fullName>
-                    <default>false</default>
-                    <label>D</label>
-                </value>
-                <value>
-                    <fullName>E</fullName>
-                    <default>false</default>
-                    <label>E</label>
-                </value>
-            </valueSetDefinition>
-        </valueSet>
+        <type>Percent</type>
     </fields>
     <fields>
-        <fullName>Email__c</fullName>
+        <fullName>Email_Address_del_del_del_del_del_de_del__c</fullName>
         <externalId>false</externalId>
-        <label>Email</label>
+        <label>Student Email Address</label>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
@@ -204,9 +175,19 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Phone__c</fullName>
+        <fullName>Email_Sent_to_student_Father__c</fullName>
         <externalId>false</externalId>
-        <label>Phone</label>
+        <label>Email Sent to student Father</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Leave__c</fullName>
+        <externalId>false</externalId>
+        <label>Leave</label>
         <precision>10</precision>
         <required>false</required>
         <scale>0</scale>
@@ -216,72 +197,51 @@
         <unique>false</unique>
     </fields>
     <fields>
-        <fullName>Training_Session__c</fullName>
-        <deleteConstraint>SetNull</deleteConstraint>
+        <fullName>Student_Id__c</fullName>
         <externalId>false</externalId>
-        <label>Training Session</label>
-        <referenceTo>Training_Session__c</referenceTo>
-        <relationshipLabel>vs</relationshipLabel>
-        <relationshipName>vs</relationshipName>
+        <label>Student_Id</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Trail_Field__c</fullName>
+        <externalId>false</externalId>
+        <label>Trail Field</label>
+        <length>11</length>
         <required>false</required>
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
-        <type>Lookup</type>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
-    <fields>
-        <fullName>Training__c</fullName>
-        <externalId>false</externalId>
-        <label>Training</label>
-        <referenceTo>Training_Session__c</referenceTo>
-        <relationshipLabel>Attendees (Training)</relationshipLabel>
-        <relationshipName>Attendees</relationshipName>
-        <relationshipOrder>0</relationshipOrder>
-        <reparentableMasterDetail>false</reparentableMasterDetail>
-        <trackHistory>false</trackHistory>
-        <trackTrending>false</trackTrending>
-        <type>MasterDetail</type>
-        <writeRequiresMasterRead>false</writeRequiresMasterRead>
-    </fields>
-    <label>Attendee</label>
+    <label>Student</label>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>Email__c</columns>
-        <columns>Training__c</columns>
+        <columns>Attendance__c</columns>
+        <columns>Email_Sent_to_student_Father__c</columns>
+        <columns>Leave__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Name</label>
+        <label>Student Name</label>
         <trackHistory>false</trackHistory>
         <type>Text</type>
     </nameField>
-    <pluralLabel>Attendees</pluralLabel>
-    <recordTypeTrackHistory>false</recordTypeTrackHistory>
-    <recordTypes>
-        <fullName>Attendee_Record</fullName>
-        <active>true</active>
-        <label>Attendee Record</label>
-        <picklistValues>
-            <picklist>Attendee_lists__c</picklist>
-            <values>
-                <fullName>A</fullName>
-                <default>false</default>
-            </values>
-            <values>
-                <fullName>B</fullName>
-                <default>false</default>
-            </values>
-        </picklistValues>
-    </recordTypes>
+    <pluralLabel>Students</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ControlledByParent</sharingModel>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
-        <fullName>Email</fullName>
+        <fullName>VR_Student_Emai_Not_Equal_Student_Father</fullName>
         <active>true</active>
-        <errorConditionFormula>NOT( REGEX( Email__c ,&quot;[a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}&quot; ))</errorConditionFormula>
-        <errorDisplayField>Email__c</errorDisplayField>
-        <errorMessage>This email doesn&apos;t look right</errorMessage>
+        <errorConditionFormula>Email_Address_del_del_del_del_del_de_del__c  == Email_Sent_to_student_Father__c</errorConditionFormula>
+        <errorMessage>Please enter different email in your Email and your Father email</errorMessage>
     </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

@@ -1,174 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
-    <applicationVisibilities>
-        <application>Tab_Check</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>Training_Details</application>
-        <default>true</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AllTabSet</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__AppLauncher</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Chatter</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Community</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Content</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__DataManager</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__ExpressionSetConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__FlowsApp</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Insights</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningBolt</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningInstrumentation</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSales</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningSalesConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningScheduler</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__LightningService</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Marketing</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Platform</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__QueueManagement</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__RevenueCloudConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sales</application>
-        <default>false</default>
-        <visible>true</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__SalesforceCMS</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Service</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__ServiceConsole</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <applicationVisibilities>
-        <application>standard__Sites</application>
-        <default>false</default>
-        <visible>false</visible>
-    </applicationVisibilities>
-    <classAccesses>
-        <apexClass>Trail_class1</apexClass>
-        <enabled>false</enabled>
-    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.Active__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>API_Settings__mdt.API_Endpoint__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.CustomerPriority__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>API_Settings__mdt.API_Key__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.NumberofLocations__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.SLAExpirationDate__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.SLASerialNumber__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.SLA__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Account.UpsellOpportunity__c</field>
-        <readable>true</readable>
+        <editable>false</editable>
+        <field>API_Settings__mdt.API_Name__c</field>
+        <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
@@ -192,26 +38,6 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Case.EngineeringReqNumber__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.PotentialLiability__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.Product__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
-        <field>Case.SLAViolation__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
-        <editable>true</editable>
         <field>Check__c.Demo__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -222,7 +48,87 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Contact.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.AssistantName</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.AssistantPhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Birthdate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.CleanStatus</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Department</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.DoNotCall</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Email</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Fax</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.GenderIdentity</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.HasOptedOutOfEmail</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.HasOptedOutOfFax</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.HomePhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Jigsaw</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Contact.Languages__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.LeadSource</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -232,12 +138,42 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Demo__c.Email_Address__c</field>
+        <field>Contact.MailingAddress</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Demo__c.Trail_Field__c</field>
+        <field>Contact.MobilePhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.OtherAddress</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.OtherPhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Phone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Contact.Pronouns</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.ReportsToId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Contact.Title</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -257,12 +193,107 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Lead.Address</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.AnnualRevenue</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.CleanStatus</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.CompanyDunsNumber</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Lead.CurrentGenerators__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.DandbCompanyId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.DoNotCall</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Email</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Fax</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.GenderIdentity</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.HasOptedOutOfEmail</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.HasOptedOutOfFax</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Industry</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Jigsaw</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.LastTransferDate</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.LeadSource</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.MobilePhone</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.NumberOfEmployees</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
         <field>Lead.NumberofLocations__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Phone</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -276,8 +307,28 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Lead.Pronouns</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Rating</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Lead.SICCode__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Title</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Website</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -292,6 +343,26 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.AccountId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Amount</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.CampaignId</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Opportunity.ContractId</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.CurrentGenerators__c</field>
         <readable>true</readable>
     </fieldPermissions>
@@ -302,7 +373,42 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Description</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Discount_Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Discount_Percent__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.ExpectedRevenue</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.IsPrivate</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.LeadSource</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.MainCompetitors__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.NextStep</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -312,7 +418,22 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
+        <field>Opportunity.Probability</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.TotalOpportunityQuantity</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
         <field>Opportunity.TrackingNumber__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Opportunity.Type</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -327,7 +448,12 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>true</editable>
-        <field>Training_Session__c.Location__c</field>
+        <field>Training_Session__c.Loaction__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Training_Session__c.Locate__c</field>
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
@@ -350,522 +476,105 @@
         <field>Training_Session__c.Sum_feed__c</field>
         <readable>true</readable>
     </fieldPermissions>
-    <layoutAssignments>
-        <layout>Account-Account Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AlternativePaymentMethod-Alternative Payment Method Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ApiAnomalyEventStore-API Anomaly Event Store Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AppointmentInvitation-Appointment Invitation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Asset-Asset Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssetAction-Asset Action Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssetActionSource-Asset Action Source Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssetRelationship-Asset Relationship Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssetStatePeriod-Asset State Period Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssignedResource-Assigned Resource Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AssociatedLocation-Associated Location Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AsyncOperationLog-Async Operation Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AsyncOperationTracker-Async Operation Tracker Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Attendee__c-Attendee Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Attendee__c-Attendee Layout</layout>
-        <recordType>Attendee__c.Attendee_Record</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AuthorizationForm-Authorization Form Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AuthorizationFormConsent-Authorization Form Consent Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AuthorizationFormDataUse-Authorization Form Data Use Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>AuthorizationFormText-Authorization Form Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>BusinessBrand-Business Brand Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalcMatrixColumnRange-Decision Matrix Column Range Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalcProcStepRelationship-Expression Set Step Relationship Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationMatrix-Decision Matrix Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationMatrixColumn-Decision Matrix Column Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationMatrixRow-Decision Matrix Row Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationMatrixVersion-Decision Matrix Version Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationProcedure-Calculation Procedure Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationProcedureStep-Calculation Procedure Step Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationProcedureVariable-Calculation Procedure Variable Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CalculationProcedureVersion-Calculation Procedure Version Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Campaign-Campaign Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CampaignMember-Campaign Member Page Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CardPaymentMethod-Card Payment Method Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CartCheckoutSession-Cart Checkout Session Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CartDeliveryGroup-Cart Delivery Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CartDeliveryGroupMethod-Cart Delivery Group Method Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CartItem-Cart Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CartTax-Cart Tax Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CartValidationOutput-Cart Validation Output Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Case-Case Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CaseClose-Close Case Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CaseMilestone-Case Milestone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Check__c-Check Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CommunityMemberLayout-Community Member Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ConsumptionRate-Consumption Rate Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ConsumptionSchedule-Consumption Schedule Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contact-Contact Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContactPointAddress-Contact Point Address Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContactPointEmail-Contact Point Email Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContactPointPhone-Contact Point Phone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContactPointTypeConsent-Contact Point Type Consent Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContentVersion-Content Version Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Contract-Contract Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ContractLineItem-Contract Line Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CredentialStuffingEventStore-Credential Stuffing Event Store Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CreditMemo-Credit Memo Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CreditMemoInvApplication-Credit Memo Invoice Application Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>CreditMemoLine-Credit Memo Line Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Customer-Customer Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DandBCompany-D%26B Company Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DataUseLegalBasis-Data Use Legal Basis Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DataUsePurpose-Data Use Purpose Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Demo__c-Demo Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DigitalWallet-Digital Wallet Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>DuplicateRecordSet-Duplicate Record Set Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EmailMessage-Email Message Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EngagementChannelType-Engagement Channel Type Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Entitlement-Entitlement Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>EntityMilestone-Object Milestone Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Event-Event Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ExpressionSet-Expression Set Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ExpressionSetVersion-Expression Set Version Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FeedItem-Feed Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Feedback__c-Feedback Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FinanceBalanceSnapshot-Finance Balance Snapshot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FinanceTransaction-Finance Transaction Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FulfillmentOrder-Fulfillment Order Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FulfillmentOrderItemAdjustment-Fulfillment Order Item Adjustment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FulfillmentOrderItemTax-Fulfillment Order Item Tax Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>FulfillmentOrderLineItem-Fulfillment Order Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Global-Global Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>GuestUserAnomalyEventStore-Guest User Anomaly Event Store Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Idea-Idea Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Individual-Individual Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Invoice-Invoice Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>InvoiceLine-Invoice Line Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lead-Lead Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LegalEntity-Legal Entity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Location-Location Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LocationGroup-Location Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>LocationGroupAssignment-Location Group Assignment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Lookup_Check__c-Lookup Check Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Macro-Macro Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OperatingHours-Operating Hours Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Opportunity-Opportunity Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OpportunityLineItem-Opportunity Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Order-Order Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>OrderItem-Order Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Payment-Payment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PaymentAuthAdjustment-Payment Authorization Adjustment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PaymentAuthorization-Payment Authorization Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PaymentGateway-Payment Gateway Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PaymentGatewayLog-Payment Gateway Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PaymentGroup-Payment Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PaymentLineInvoice-Payment Line Invoice Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Pricebook2-Price Book Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>PricebookEntry-Price Book Entry Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProcessException-Process Exception Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Product2-Product Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ProductConsumptionSchedule-Product Consumption Schedule Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>QuickText-Quick Text Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Refund-Refund Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>RefundLinePayment-Refund Line Payment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ReportAnomalyEventStore-Report Anomaly Event Store Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ResourceAbsence-Resource Absence Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ResourcePreference-Resource Preference Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ReturnOrder-Return Order Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ReturnOrderItemAdjustment-Return Order Item Adjustment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ReturnOrderItemTax-Return Order Item Tax Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ReturnOrderLineItem-Return Order Line Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>RevenueAsyncOperation-Revenue Async Operation Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>RevenueTransactionErrorLog-Revenue Transaction Error Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Scorecard-Scorecard Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScorecardAssociation-Scorecard Association Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ScorecardMetric-Scorecard Metric Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Seller-Seller Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceAppointment-Service Appointment Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceAppointmentShift-Service Appointment Shift Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceContract-Service Contract Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceResource-Service Resource Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceResourceSkill-Service Resource Skill Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceTerritory-Service Territory Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ServiceTerritoryMember-Service Territory Member Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SessionHijackingEventStore-Session Hijacking Event Store Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Shift-Shift Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ShiftWorkTopic-Shift Work Topic Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ShippingConfigurationSet-Shipping Configuration Set Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ShippingRateArea-Shipping Rate Area Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ShippingRateGroup-Shipping Rate Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SkillRequirement-Skill Requirement Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>SocialPersona-Social Persona Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Solution-Solution Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>StandardShippingRate-Standard Shipping Rate Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Task-Task Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>ThreatDetectionFeedback-Threat Detection Feedback Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>TimeSlot-Time Slot Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Training_Session__c-Training Session Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Training_Session__c-Training Session Layout</layout>
-        <recordType>Training_Session__c.Webinar</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Training_Session__c-Training Session Layout</layout>
-        <recordType>Training_Session__c.Workshop</recordType>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>User-User Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserAlt-User Profile Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserProvAccount-User Provisioning Account Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserProvisioningLog-User Provisioning Log Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>UserProvisioningRequest-User Provisioning Request Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>Waitlist-%5F%5FMISSING LABEL%5F%5F PropertyFile - val Waitlist not found in section StandardLayouts</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WebCart-Cart Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WebCartAdjustmentBasis-Cart Adjustment Basis Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WebCartAdjustmentGroup-Cart Adjustment Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WebStore-Store Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WebStoreConfig-Web Store Configuration Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkOrder-Work Order Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkOrderLineItem-Work Order Line Item Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkPlan-Work Plan Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkPlanTemplate-Work Plan Template Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkPlanTemplateEntry-Work Plan Template Entry Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkStep-Work Step Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkStepTemplate-Work Step Template Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkType-Work Type Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkTypeGroup-Work Type Group Layout</layout>
-    </layoutAssignments>
-    <layoutAssignments>
-        <layout>WorkTypeGroupMember-Work Type Group Member Layout</layout>
-    </layoutAssignments>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>student__c.Attendance__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>student__c.Email_Address_del_del_del_del_del_de_del__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>student__c.Email_Sent_to_student_Father__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>student__c.Leave__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>student__c.Student_Id__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>student__c.Trail_Field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Contact</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Feedback__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>false</allowCreate>
+        <allowDelete>false</allowDelete>
+        <allowEdit>false</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Lead</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Opportunity</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>false</modifyAllRecords>
+        <object>Training_Session__c</object>
+        <viewAllRecords>false</viewAllRecords>
+    </objectPermissions>
     <recordTypeVisibilities>
         <default>true</default>
         <recordType>Attendee__c.Attendee_Record</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Contact.Customer_Record_Type</recordType>
+        <visible>false</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <personAccountDefault>true</personAccountDefault>
+        <recordType>Contact.Service_Provider</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>true</default>
+        <recordType>Opportunity.Opportunity_1_for_Sales_Profile</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <default>false</default>
+        <recordType>Opportunity.Opportunity_2_for_Sales_Profile</recordType>
         <visible>true</visible>
     </recordTypeVisibilities>
     <recordTypeVisibilities>
@@ -888,6 +597,22 @@
     </tabVisibilities>
     <tabVisibilities>
         <tab>Training_Session__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Contact</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Lead</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>standard-Opportunity</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>student__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>
