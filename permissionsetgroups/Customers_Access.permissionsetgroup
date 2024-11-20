@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Customers Access</label>
+    <mutingPermissionSets>Customers_Access_Muted</mutingPermissionSets>
+    <permissionSets>Customers_Access_Related_Fields</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>
