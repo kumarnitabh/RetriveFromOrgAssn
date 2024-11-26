@@ -11,7 +11,7 @@
 public  class OperationsOnList {
 
  /**
- * Description : This method is created to have a list of numbers and then add all the records of another list and sort them.
+ * Description : This method is created to have a list of integers and then add all random numbers to it and sort them in ascending order.
  * 
  * Created By : Kumar Nitabh
  * 
