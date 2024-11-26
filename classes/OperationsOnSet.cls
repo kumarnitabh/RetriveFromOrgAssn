@@ -8,35 +8,45 @@
  */
 
 public  class OperationsOnSet {
-    public static void setDifferentOperation () {
 
-        // Set1 of students 
-        Set<String> studentSet1 = new Set<String>();
+/**
+ * Description : This method is used to perform the operation like intersection, Union and difference on setOfStudents1 and setOfStudents2
+ * 
+ * Created By : Kumar Nitabh
+ * 
+ * Created on : 26/11/2024
+ * 
+ */
+
+    public static void differentOperationsOnSet () {
+
+        // Set of students1 
+        Set<String> setOfStudents1 = new Set<String>();
 
         // Adding values in Set1 
-        studentSet1.add('Tom');
-        studentSet1.add('Mark');
-        studentSet1.add('Harry');
+        setOfStudents1.add('Tom');
+        setOfStudents1.add('Mark');
+        setOfStudents1.add('Harry');
         
-		// Set2 of students
-        Set<String> studentSet2 = new Set<String>();
+		// Set of students2
+        Set<String> setOfStudents2 = new Set<String>();
 
         // Adding values in Set2        
-        studentSet2.add('Brook');
-        studentSet2.add('Travis');
-        studentSet2.add('Tom');
+        setOfStudents2.add('Brook');
+        setOfStudents2.add('Travis');
+        setOfStudents2.add('Tom');
         
         // Intersection of Both sets        
-        Set<String> intersectionOfStudent=new Set<String>(studentSet1);
-        intersectionOfStudent.retainall(studentSet2);
+        Set<String> intersectionOfStudent=new Set<String>(setOfStudents1);
+        intersectionOfStudent.retainall(setOfStudents2);
 
         // Union of Both sets        
-        Set<String> unionOfStudent=new Set<String>(studentSet1);
-        unionOfStudent.addall(studentSet2);
+        Set<String> unionOfStudent=new Set<String>(setOfStudents1);
+        unionOfStudent.addall(setOfStudents2);
 
         // Difference of Both sets        
-        Set<String> differenceOfStudent=new Set<String>(studentSet2);
-        differenceOfStudent.removeall(studentSet1);
+        Set<String> differenceOfStudent=new Set<String>(setOfStudents1);
+        differenceOfStudent.removeall(setOfStudents2);
         
         // Debugging Intersection, Union & Difference        
         System.debug(intersectionOfStudent);
