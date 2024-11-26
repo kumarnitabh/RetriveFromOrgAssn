@@ -8,17 +8,27 @@
  */
 
 public  class OperationsOnList {
-    public static void sortedList() {
 
-        List<Integer> numbersList =new List<Integer>();
+ /**
+ * Description : This method is used to sort the list  
+ * 
+ * Created By : Kumar Nitabh
+ * 
+ * Created on : 26/11/2024
+ * 
+ */
+
+    public static void SortedList() {
+
+        List<Integer> listOfNumbers =new List<Integer>();
             
-        List<Integer> randomNumbers=new List<Integer>{3,43,12,76,11,32,91,62,72,37};
+        List<Integer> listOfRandomNumbers=new List<Integer>{3,43,12,76,11,32,91,62,72,37};
 
-        numbersList.addall(randomNumbers);
+        listOfNumbers.addall(listOfRandomNumbers);
 
-        numbersList.sort();
+        listOfNumbers.sort();
 
-        System.debug(numbersList);
+        System.debug(listOfNumbers);
 
     }
 }
