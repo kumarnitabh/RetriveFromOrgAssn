@@ -8,17 +8,17 @@
  */
 
 public  class OperationsOnList {
-    public static void SortedList() {
+    public static void sortedList() {
 
-        List<Integer> NumbersList =new List<Integer>();
+        List<Integer> numbersList =new List<Integer>();
             
-        List<Integer> RandomNumbers=new List<Integer>{3,43,12,76,11,32,91,62,72,37};
+        List<Integer> randomNumbers=new List<Integer>{3,43,12,76,11,32,91,62,72,37};
 
-        NumbersList.addall(RandomNumbers);
+        numbersList.addall(randomNumbers);
 
-        NumbersList.sort();
+        numbersList.sort();
 
-        System.debug(NumbersList);
+        System.debug(numbersList);
 
     }
 }
