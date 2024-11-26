@@ -1,5 +1,5 @@
 /**
- * Description : Mapping a list
+ * Description : Map is created where key is Department name and Value is List of Employees name.
  * 
  * Created By : Kumar Nitabh
  * 
@@ -11,7 +11,7 @@
 public class EmployeeDepartmentMap {
 
 /**
- * Description : This method is used to map a record 
+ * Description : This method is created to insert Department and Employee name to variable mapOfDepartmentToEmployees
  * 
  * Created By : Kumar Nitabh
  * 
