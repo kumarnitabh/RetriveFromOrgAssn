@@ -8,15 +8,25 @@
  */
 
 public class EmployeeDepartmentMap {
-    public static void employeeData() {
 
-        Map<String, List<String>> dataOfEmployee =new Map<String, List<String>>();
+/**
+ * Description : This method is used to map a record 
+ * 
+ * Created By : Kumar Nitabh
+ * 
+ * Created on : 26/11/2024
+ * 
+ */
 
-        dataOfEmployee.put('IT',new List<String>{'R','A','C'});
-        dataOfEmployee.put('Sales',new List<String>{'P','Q','R'});
-        dataOfEmployee.put('Marketing',new List<String>{'S','T','U'});
+    public static void employeesData() {
 
-        System.debug(dataOfEmployee);
+        Map<String, List<String>> mapOfDepartmentToEmployees =new Map<String, List<String>>();
+
+        mapOfDepartmentToEmployees.put('IT',new List<String>{'R','A','C'});
+        mapOfDepartmentToEmployees.put('Sales',new List<String>{'P','Q','R'});
+        mapOfDepartmentToEmployees.put('Marketing',new List<String>{'S','T','U'});
+
+        System.debug(mapOfDepartmentToEmployees);
 
     }
 }
