@@ -20,7 +20,7 @@ public  class OperationsOnList {
  * Revision Logs :  V_1.0 - Created
  */
 
-    public static void SortedList() {
+    public static void sortedList() {
 
         List<Integer> listOfNumbers =new List<Integer>();
             
