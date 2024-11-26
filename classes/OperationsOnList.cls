@@ -1,5 +1,5 @@
 /**
- * Description : Created a list add random numbers then sort it 
+ * Description : List is created of Integer add some random numbers in it and sort the list.
  * 
  * Created By : Kumar Nitabh
  * 
@@ -11,7 +11,7 @@
 public  class OperationsOnList {
 
  /**
- * Description : This method is used to sort the list  
+ * Description : This method is created to have a list of numbers and then add all the records of another list and sort them.
  * 
  * Created By : Kumar Nitabh
  * 
