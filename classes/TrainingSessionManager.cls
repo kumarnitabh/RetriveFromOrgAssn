@@ -23,10 +23,10 @@ public class TrainingSessionManager {
  */
     public static void createTrainingSessionRecords() {
 
-        list<Training_Session__c > addTrainingSessionRecords = new list<Training_Session__c >();
-		addTrainingSessionRecords.add(new Training_Session__c(Name='Dhruv',Loaction__c='India'));
-        addTrainingSessionRecords.add(new Training_Session__c(Name='Harsh',Loaction__c='England'));
-        insert addTrainingSessionRecords;
+        list<Training_Session__c > createNewTrainingSessionRecords = new list<Training_Session__c >();
+	createNewTrainingSessionRecords.add(new Training_Session__c(Name='Dhruv',Loaction__c='India'));
+        createNewTrainingSessionRecords.add(new Training_Session__c(Name='Harsh',Loaction__c='England'));
+        insert createNewTrainingSessionRecords;
   
     }
 /*   
@@ -140,15 +140,13 @@ public class TrainingSessionManager {
  * 
  */
     
-    public static void safeNavigation(string trainingSessionId){
+    public static void safeNavigation(string recordId){
 
-        List<Training_Session__c> fetchRecord = [
-            SELECT Id, Name ,(SELECT Id, Name FROM Attendees__r) FROM Training_Session__c 
-             WHERE Id = :trainingSessionId LIMIT 1];     
+        List<Training_Session__c> fetchingRecord = [ SELECT Id, Name ,(SELECT Id, Name FROM Attendees__r) FROM Training_Session__c WHERE Id = :recordId LIMIT 1];     
         
-        if (!fetchRecord.isEmpty() && fetchRecord[0]?.attendees__r !=NULL) {
+        if (!fetchingRecord.isEmpty() && fetchingRecord[0]?.attendees__r !=NULL) {
            
-             for (Attendee__c attendee : fetchRecord[0].attendees__r) {
+             for (Attendee__c attendee : fetchingRecord[0].attendees__r) {
                 System.debug('Attendee: ' + attendee.Name);
              }
         }
