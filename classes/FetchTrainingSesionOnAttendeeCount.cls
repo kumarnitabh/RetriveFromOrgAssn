@@ -25,12 +25,12 @@ public class FetchTrainingSesionOnAttendeeCount {
  */
 
     
-    public static void fetchingUsingCriteriaBased(String str, String dt){
-        date dtt = date.valueof(dt);
+    public static void fetchingUsingCriteriaBased(Id sessionId, String dateOfSession){
+        Date sessionDate = Date.valueof(dateOfSession);
         
-         list<Training_Session__c> fetchRecordUsingAttendeeRecords = [Select Name ,Session_Date__c, Loaction__c	, RecordTypeId from
-                                                                        Training_Session__c Where RecordTypeId = :str and 
-                                                                        Session_Date__c = :dtt ];
+         List<Training_Session__c> fetchRecordUsingAttendeeRecords = [SELECT Name, Session_Date__c, Loaction__c, RecordTypeId FROM
+                                                                        Training_Session__c WHERE RecordTypeId = :sessionId and 
+                                                                        Session_Date__c = :sessionDate];
 
             
             System.debug(fetchRecordUsingAttendeeRecords);
@@ -49,10 +49,10 @@ public class FetchTrainingSesionOnAttendeeCount {
  */
     
     
-    public static void bulkInsertInTrainingSession(){
+    public static void bulkInsertTrainingSession(){
         
-        List<Training_Session__c> insertRecords = new list<Training_Session__c> { new Training_Session__c( Loaction__c ='Hyderabad'), 
-            new Training_Session__c(Name='Raj', Loaction__c ='Bangalore')};
+        List<Training_Session__c> insertRecords = new List<Training_Session__c> {new Training_Session__c(Name='Praveen', Loaction__c ='Hyderabad'), 
+                                                                                    new Training_Session__c(Name='Raj', Loaction__c ='Bangalore')};
             
             Database.SaveResult[] recordList = Database.insert(insertRecords, false);
         
@@ -81,18 +81,18 @@ public class FetchTrainingSesionOnAttendeeCount {
  * 
  */
         
-    public static void bulkUpdateTrainingSession(string Naming, string dat){
+    public static void bulkUpdateTrainingSession(String naming, String askDate){
             
-            date datee = date.valueof(dat);
+            Date sessionDate = Date.valueof(askDate);
             
-            Training_Session__c fetchRecord =[select Name, Loaction__c, Session_Date__c 
-                                              from Training_Session__c where Name = :Naming and Session_Date__c =:datee];
-            fetchRecord.Loaction__c ='Pune';
-            fetchRecord.Name ='Har';
+            Training_Session__c fetchRecord =[SELECT Name, Loaction__c, Session_Date__c 
+                                              FROM Training_Session__c WHERE Name = :naming and Session_Date__c = :sessionDate];
+            fetchRecord.Loaction__c = 'Pune';
+            fetchRecord.Name = 'Har';
             
-            Database.saveResult updatedlist = database.update(fetchRecord,false);
+            Database.SaveResult updatedList = Database.update(fetchRecord, false);
             
-            if(updatedlist.isSuccess()){
+            if(updatedList.isSuccess()){
                 
                 System.debug('Successfully updated');
             }
@@ -113,14 +113,14 @@ public class FetchTrainingSesionOnAttendeeCount {
  * 
  */    
   
-    public static void deleteExistingRecord(String Na, String Loc){
+    public static void deleteExistingRecord(String nameOfSession, String place){
                 
-            Training_Session__c deleteRecords=[select Name, Loaction__c, Session_Date__c from Training_Session__c 
-                                                where Name = :Na and Loaction__c =:loc ];
+            Training_Session__c deleteRecords=[SELECT Name, Loaction__c, Session_Date__c FROM Training_Session__c 
+                                                WHERE Name = :nameOfSession and Loaction__c = :place ];
                 
-            database.deleteresult RecordsDeleted = Database.delete(deleteRecords);
+            database.deleteresult recordsDeleted = Database.delete(deleteRecords);
                 
-            if(RecordsDeleted.issuccess()){
+            if(recordsDeleted.isSuccess()){
                     
                 System.debug('Successfully deleted ');
                 }
