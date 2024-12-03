@@ -97,7 +97,7 @@ public class FetchTrainingSesionOnAttendeeCount {
                 System.debug('Successfully updated');
             }
             else{
-                System.debug('Error not  updated');
+                System.debug('Details entered are wrong. Update cancelled !');
  
             }
         }
@@ -127,7 +127,7 @@ public class FetchTrainingSesionOnAttendeeCount {
                 
                 else{
                     
-                System.debug('Wrong details not deleted ');
+                System.debug('Wrong details to fetch No match is found to delete records.');
                 }
             
     }
