@@ -23,9 +23,9 @@ public class TrainingSessionManager {
  */
     public static void createTrainingSessionRecords() {
 
-        list<Training_Session__c > createNewTrainingSessionRecords = new list<Training_Session__c >();
-	createNewTrainingSessionRecords.add(new Training_Session__c(Name='Dhruv',Loaction__c='India'));
-        createNewTrainingSessionRecords.add(new Training_Session__c(Name='Harsh',Loaction__c='England'));
+        List<Training_Session__c > createNewTrainingSessionRecords = new List<Training_Session__c >();
+	createNewTrainingSessionRecords.add(new Training_Session__c(Name = 'Dhruv, Loaction__c = 'India'));
+        createNewTrainingSessionRecords.add(new Training_Session__c(Name = 'Harsh', Loaction__c = 'England'));
         insert createNewTrainingSessionRecords;
   
     }
@@ -42,8 +42,8 @@ public class TrainingSessionManager {
     public static void updateTrainingSessionRecords() {
 
         Training_Session__c updateTrainingSessionRecords = new Training_Session__c();
-        updateTrainingSessionRecords = [Select ID,Loaction__c,Name from Training_Session__c Where Id ='a03dL00000CS621QAD'] ;
-        updateTrainingSessionRecords.Loaction__c='Africa';
+        updateTrainingSessionRecords = [SELECT Id, Loaction__c, Name FROM Training_Session__c WHERE Id = 'a03dL00000CS621QAD'] ;
+        updateTrainingSessionRecords.Loaction__c = 'Africa';
         update updateTrainingSessionRecords;
 
 }
@@ -59,8 +59,8 @@ public class TrainingSessionManager {
  */
     
     public static void deleteRecordsOfTrainingSessions(){
-        Training_Session__c deleteTrainingSessionsRecords =new Training_Session__c();
-        deleteTrainingSessionsRecords = [Select ID from Training_Session__c Where Id ='a07dL00000GRMgfQAH'] ;
+        Training_Session__c deleteTrainingSessionsRecords = new Training_Session__c();
+        deleteTrainingSessionsRecords = [SELECT Id FROM Training_Session__c WHERE Id = 'a07dL00000GRMgfQAH'] ;
         delete deleteTrainingSessionsRecords;
 
 }
@@ -76,8 +76,8 @@ public class TrainingSessionManager {
  */
     
     public static void readRecordsOfTrainingSessions(){
-        Training_Session__c readTrainingSessionsRecords =new Training_Session__c();
-        readTrainingSessionsRecords = [Select ID, Name,Loaction__c,RecordTypeId from Training_Session__c limit 5] ;
+        Training_Session__c readTrainingSessionsRecords = new Training_Session__c();
+        readTrainingSessionsRecords = [SELECT Id, Name, Loaction__c, RecordTypeId FROM Training_Session__c LIMIT 5] ;
     
 
 }
@@ -94,9 +94,9 @@ public class TrainingSessionManager {
     
    
  public static void addAttendeeToTrainingSession(){
-    list<Training_Session__c> addAttendeeRecordsInTrainingSession = new list<Training_Session__c>()  ;
-    addAttendeeRecordsInTrainingSession = [Select Id, Name from Training_Session__c ];
-    set<Training_Session__c> setUniqueTrainingSessionRecords  = new set<Training_Session__c>() ;
+    List<Training_Session__c> addAttendeeRecordsInTrainingSession = new List<Training_Session__c>()  ;
+    addAttendeeRecordsInTrainingSession = [SELECT Id, Name FROM Training_Session__c ];
+    Set<Training_Session__c> setUniqueTrainingSessionRecords  = new Set<Training_Session__c>() ;
     for (Training_Session__c recordsTrainingSession : addAttendeeRecordsInTrainingSession){
         setUniqueTrainingSessionRecords.add(recordsTrainingSession);
     }
@@ -119,9 +119,9 @@ public class TrainingSessionManager {
 
     public static void  trainingSessionsEnum(){
 
-        Training_Session__c fetchingRecordsTrainingSession = [select Record_value__c from Training_Session__c limit 1];
+        Training_Session__c fetchingRecordsTrainingSession = [SELECT Record_value__c FROM Training_Session__c LIMIT 1];
         
-        if(fetchingRecordsTrainingSession.Record_value__c == 'Webinar'){
+        if(fetchingRecordsTrainingSession.Record_value__c == Department.name(){
             System.debug('Workshop');
             
         }else{
@@ -142,7 +142,7 @@ public class TrainingSessionManager {
     
     public static void safeNavigation(string recordId){
 
-        List<Training_Session__c> fetchingRecord = [ SELECT Id, Name ,(SELECT Id, Name FROM Attendees__r) FROM Training_Session__c WHERE Id = :recordId LIMIT 1];     
+        List<Training_Session__c> fetchingRecord = [SELECT Id, Name, (SELECT Id, Name FROM Attendees__r) FROM Training_Session__c WHERE Id = :recordId LIMIT 1];     
         
         if (!fetchingRecord.isEmpty() && fetchingRecord[0]?.attendees__r !=NULL) {
            
@@ -168,8 +168,8 @@ public class TrainingSessionManager {
  */
 
 public static void fetchTrainingSessionAndAttendee(){
-    list<Training_Session__c> fetchingRecordsTrainingSessionAndAttendee ;
-    fetchingRecordsTrainingSessionAndAttendee = [Select Id, Name, Loaction__c, Avg_Rating__c ,(Select Name, Phone__c, Email__c from Attendees__r) from Training_Session__c ];
+    List<Training_Session__c> fetchingRecordsTrainingSessionAndAttendee ;
+    fetchingRecordsTrainingSessionAndAttendee = [SELECT Id, Name, Loaction__c, Avg_Rating__c ,(Select Name, Phone__c, Email__c FROM Attendees__r) FROM Training_Session__c ];
     
     for(Training_Session__c trainingRecord : fetchingRecordsTrainingSessionAndAttendee){
         System.debug(trainingRecord);
@@ -192,9 +192,9 @@ public static void fetchTrainingSessionAndAttendee(){
 
     public static void dmlInsertOperationOnTrainingSession(){
 
-        list<Training_Session__c> insertRecordOnTrainingSession =new list<Training_Session__c>();
-        insertRecordOnTrainingSession.add(new Training_Session__c(Name='Alex',Loaction__c='Australia'));
-        insertRecordOnTrainingSession.add(new Training_Session__c(Name='Liam',Loaction__c='Africa'));
+        List<Training_Session__c> insertRecordOnTrainingSession =new List<Training_Session__c>();
+        insertRecordOnTrainingSession.add(new Training_Session__c(Name = 'Alex',Loaction__c = 'Australia'));
+        insertRecordOnTrainingSession.add(new Training_Session__c(Name = 'Liam',Loaction__c = 'Africa'));
         insert insertRecordOnTrainingSession;
 }
 /* 
@@ -210,7 +210,7 @@ public static void fetchTrainingSessionAndAttendee(){
 
     public static void dmlUpdateOperationOnTrainingSession(){
         Training_Session__c updateOperationOnTrainingSession = new Training_Session__c();
-        updateOperationOnTrainingSession =[Select Id, Name, Loaction__c from Training_Session__c Where Name ='Alex'];
+        updateOperationOnTrainingSession =[SELECT Id, Name, Loaction__c FROM Training_Session__c WHERE Name ='Alex'];
         updateOperationOnTrainingSession.Name = 'Alexa';
         update updateOperationOnTrainingSession;
         
@@ -228,11 +228,9 @@ public static void fetchTrainingSessionAndAttendee(){
 
  public static void dmlDeleteOperationOnTrainingSession(){
     Training_Session__c deleteOperationOnTrainingSession = new Training_Session__c();
-    deleteOperationOnTrainingSession =[select Id from Training_Session__c where Id='a03dL00000CYf1xQAD'];
+    deleteOperationOnTrainingSession = [SELECT Id FROM Training_Session__c WHERE Id = 'a03dL00000CYf1xQAD'];
     delete deleteOperationOnTrainingSession;
 
 }
-
-
 
 }
