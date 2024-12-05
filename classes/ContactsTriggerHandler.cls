@@ -23,7 +23,7 @@ public class ContactsTriggerHandler {
             if(thisContact.AccountId !=null && thisContact.Email !=null ){
                 String checkingContains = domainOfAccount.get(thisContact.AccountId);
                 if(!thisContact.email.contains(checkingContains)){
-                    thisContact.adderror('Must contain');
+                    thisContact.adderror('Email must contain Domain of associated Account');
                     
                 }
                 
