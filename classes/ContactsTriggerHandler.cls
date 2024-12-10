@@ -34,5 +34,23 @@ public class ContactsTriggerHandler {
         }
         
     }
+
+public static void duplicateRecords(List<Contact> newListOfContact, map<Id, Contact> oldMap){
+        
+        Map<Id, String> mapEmailOfContact = new Map<Id, String>();
+        for(Account con : [Select Id, Domain__c from Account]){
+            mapEmailOfContact.put(con.Id, con.Domain__c);
+        }
+        for(Contact thisContact : newListOfContact){
+            if(thisContact.AccountId != null && thisContact.Email != null){ 
+                if(thisContact.Email.substringAfter('@').toLowerCase() != mapEmailOfContact.get(thisContact.AccountId)){ 
+                thisContact.addError('Duplicate Records. Please select unique Phone or Email records');
+                }
+            
+            
+        }
+    }
+    
+    }
  
 }
