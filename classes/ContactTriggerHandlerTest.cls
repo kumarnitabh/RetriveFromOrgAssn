@@ -39,10 +39,11 @@ public class ContactTriggerHandlerTest {
         con1.AccountId = acc.Id;
         con1.Email ='xyz@Domain.com';
         con1.LastName ='Back';
-        try {
+       try {
             insert con1;
         } catch(Exception e) {
-             System.debug(e.getMessage());
+           
+             Assert.areEqual(true, e.getMessage().contains(ContactBeforeTriggerHandler.str),'Unexpected error');
         }  
         
         String str = con1.Email.subStringAfter('@');
