@@ -38,7 +38,7 @@ public class AttendeeTriggerHandler  {
                 }
             }
             
-            List<Contact> thisContact = [Select Id, AttendeeEnrolledForSession__c From contact Where Id 
+            List<Contact> thisContact = [SELECT Id, AttendeeEnrolledForSession__c FROM Contact WHERE Id 
                                             IN :mapOfContactAndAttendee.keySet()];
             for(Contact updateContact : thisContact) {
                 updateContact.AttendeeEnrolledForSession__c = updateContact.AttendeeEnrolledForSession__c +  
