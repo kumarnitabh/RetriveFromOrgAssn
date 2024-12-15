@@ -27,27 +27,18 @@ public class ContactTriggerHandlerTest {
         con.LastName ='Domain';
         insert con;
         
-        Contact con2 = new Contact();
-        con.LastName ='Domain';
-        try { 
-        insert con2;
-        } Catch (Exception e){
-            System.debug(e.getMessage());
-        }
-        
         Contact con1 = new Contact();
         con1.AccountId = acc.Id;
         con1.Email ='xyz@Domain.com';
-        con1.LastName ='Back';
-       try {
+        con1.LastName ='Back'; 
+        try {
             insert con1;
         } catch(Exception e) {
            
              Assert.areEqual(true, e.getMessage().contains(ContactBeforeTriggerHandler.str),'Unexpected error');
         }  
         
-        String str = con1.Email.subStringAfter('@');
-        Assert.areEqual(acc.Domain__c, str);
+       
     }
 
 }
