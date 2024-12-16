@@ -24,8 +24,8 @@ public class AccountProcessorTest {
         AccountProcessor.countContacts(accountIds);
         Test.stopTest();
         
-       
-        
-    }
+        Account updateAccount = [SELECT Id, Number_Of_Contacts__c FROM Account WHERE Id = :acc.Id ];
+        Assert.areEqual(2, updateAccount.Number_Of_Contacts__c );
+   }
 
 }
