@@ -2,7 +2,7 @@ public class AccountProcessor {
     @future
     public static void countContacts(List<Id> accountIds){
         
-        List<Account> updateAccount = new List<Account>();
+        List<Account> updateAccounts = new List<Account>();
         List<Account> acc =[SELECT Id, Name,(SELECT Id FROM Contacts) FROM Account WHERE Id IN : accountIds];
         
         for(Account acct : acc){ 
