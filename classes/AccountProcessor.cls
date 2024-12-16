@@ -2,16 +2,27 @@ public class AccountProcessor {
     @future
     public static void countContacts(List<Id> accountIds){
         
-        List<Account> updateAccounts = new List<Account>();
-        List<Account> acc =[SELECT Id, Name,(SELECT Id FROM Contacts) FROM Account WHERE Id IN : accountIds];
-        
-        for(Account acct : acc){ 
-            List<Contact> listOfContacts = acct.Contacts;
-            acct.Number_Of_Contacts__c = listOfContacts.size();
-            updateAccount.add(acct);
+        if (!accountIds.isEmpty()) {
+            List<AggregateResult> results = [SELECT AccountId, COUNT(Id) contactCount
+                                             FROM Contact 
+               								 WHERE AccountId IN :accountIds
+               								 GROUP BY AccountId];
+     
+            Map<Id, Integer> mapOfContactCounts = new Map<Id, Integer>();
+            for (AggregateResult result : results) {
+                mapOfContactCounts.put( (Id) result.get('AccountId'),(Integer) result.get('contactCount') );
+           }
+            
+            List<Account> accountsToUpdate = new List<Account>();
+            for (Id idOfAccount : mapOfContactCounts.keySet()) {
+                accountsToUpdate.add(new Account( Id = idOfAccount,  Number_Of_Contacts__c = mapOfContactCounts.get(idOfAccount)));
+           }
+            
+            if (!accountsToUpdate.isEmpty()) {
+                update accountsToUpdate;
+                
+            }
+            
         }
-        update updateAccount;
-        
     }
-
 }
