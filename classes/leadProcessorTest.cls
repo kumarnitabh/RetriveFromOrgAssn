@@ -19,7 +19,7 @@ public class leadProcessorTest {
         List<Lead> newRecordsOfLead = new List<Lead>();
 
         for(Integer i=0; i<200; i++){
-            newRecordsOfLead.add(new Lead (LastName = 'Lead' +i, Company ='xyz' +i , Phone ='23456798765' +i, Status ='Open - Not Contacted'));
+            newRecordsOfLead.add(new Lead (LastName = 'Lead' +i, Company ='xyz' , Phone ='23456798765', Status ='Open - Not Contacted'));
         }
         insert newRecordsOfLead;
         
