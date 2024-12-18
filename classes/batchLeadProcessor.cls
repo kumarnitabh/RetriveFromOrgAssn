@@ -9,12 +9,12 @@
  * 
  */
 
-global class batchLeadProcessor implements Database.Batchable<SObject>, Schedulable {
+global class batchLeadProcessor implements Database.Batchable<sObject>, Schedulable {
     global Integer recordsProcessed = 0;
 
     global Database.QueryLocator start(Database.BatchableContext bc){
 
-        return Database.getQueryLocator('SELECT Id, LeadSource From Lead');
+        return Database.getQueryLocator('SELECT Id, LeadSource FROM Lead');
     }
 
     global void execute (Database.BatchableContext bc , List<Lead> listOfLead){
