@@ -14,7 +14,7 @@ global class batchLeadProcessor implements Database.Batchable<sObject>, Schedula
 
     global Database.QueryLocator start(Database.BatchableContext bc){
 
-        return Database.getQueryLocator('SELECT Id, LeadSource FROM Lead');
+        return Database.getQueryLocator('SELECT Id, LeadSource FROM Lead WHERE LeadSource != Dreamforce');
     }
 
     global void execute (Database.BatchableContext bc , List<Lead> listOfLead){
