@@ -10,8 +10,7 @@ public class AddPrimaryContactQueueable implements Queueable {
 
     public void execute(QueueableContext qc){
 
-        List<Account> acc =[SELECT Id, BillingState,(SELECT Id, AccountId, lastName FROM Contacts) 
-                                                        FROM Account WHERE BillingState = :abbreviationOfState LIMIT 200];
+        List<Account> acc =[SELECT Id, BillingState FROM Account WHERE BillingState = :abbreviationOfState LIMIT 200];
         List<Contact> listOfContact = new List<contact>();
         for(Account thisAccount : acc){ 
             Contact cloneContact = contacts.clone(false, false, false, false);
