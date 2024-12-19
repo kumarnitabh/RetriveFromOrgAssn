@@ -14,10 +14,10 @@ public class AddPrimaryContactQueueable implements Queueable {
                                                         FROM Account WHERE BillingState = :abbreviationOfState LIMIT 200];
         List<Contact> listOfContact = new List<contact>();
         for(Account thisAccount : acc){ 
-        Contact cloneContact = contacts.clone(false, false, false, false);
-        cloneContact.AccountId=thisAccount.Id;
-        listOfContact.add(cloneContact);
-        }
+            Contact cloneContact = contacts.clone(false, false, false, false);
+            cloneContact.AccountId=thisAccount.Id;
+            listOfContact.add(cloneContact);
+            }
         if(!listOfContact.isEmpty()){
             insert listOfContact;
         }
