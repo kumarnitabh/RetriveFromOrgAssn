@@ -14,9 +14,14 @@ trigger ContactsTrigger on Contact (before insert, before update) {
     if(Trigger.isBefore){
         if(Trigger.isInsert){
             
-            ContactBeforeTriggerHandler.validateEmailOnContact(Trigger.new, Trigger.oldMap);
+            //ContactsTriggerHandler.checkEmailInAccountDomain(Trigger.new);
+            ContactsTriggerHandler.dynamicUpdateField(Trigger.new, trigger.oldMap);
+           // ContactsTriggerHandler.createUser(Trigger.new);
             
             
+        }
+        if(Trigger.isUpdate){
+            ContactsTriggerHandler.dynamicUpdateField(Trigger.new, trigger.oldMap);
         }
     }
        
