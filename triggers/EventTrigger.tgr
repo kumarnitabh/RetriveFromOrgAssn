@@ -1,0 +1,16 @@
+trigger EventTrigger on Event (after insert, after update, after delete) {
+    
+    if(trigger.isAfter){
+        if(trigger.isInsert){
+            EventTriggerHandler.rollUpField(trigger.new,null);
+        }
+        if(trigger.isUpdate){
+            EventTriggerHandler.rollUpField(trigger.new,trigger.oldMap);
+        }
+        if(trigger.isdelete){
+            EventTriggerHandler.rollUpField(trigger.new,trigger.oldMap);
+        }
+    
+    }
+
+}
