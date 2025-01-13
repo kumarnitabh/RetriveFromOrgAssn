@@ -12,6 +12,8 @@
 
 public class ContactBeforeTriggerHandler {
     
+    public static String str ='Email must contain Domain of associate Account.';
+    
 /**
  * Description : This method is created to validate Email field on Contact.
  * 
@@ -23,10 +25,10 @@ public class ContactBeforeTriggerHandler {
  * 
  */
 
-   public static void validateEmailOnContact(List<Contact> newListOfContact, Map<Id, Contact> oldMap){
+   public static void validateEmailOnContact(List<Contact> newListOfContact, map<Id, Contact> oldMap){
         
         Map<Id, String> mapEmailOfContact = new Map<Id, String>();
-        for(Account thisAccount : [SELECT Id, Domain__c FROM Account]){
+        for(Account thisAccount : [Select Id, Domain__c from Account]){
             mapEmailOfContact.put(thisAccount.Id, thisAccount.Domain__c);
         }
         for(Contact thisContact : newListOfContact){
@@ -36,8 +38,7 @@ public class ContactBeforeTriggerHandler {
                 }
             
             
-        }
+        } 
     }
     
     }
-}
