@@ -1,13 +1,13 @@
 global class BatchSobjectRecords implements Database.Batchable<SObject>, Database.stateful, Schedulable{
     
-    String ObjectName;
+    String objectName;
     global  BatchSobjectRecords(String ObjectApiName){
-        ObjectName=ObjectApiName;
+        objectName=ObjectApiName;
     }
     
     private List<String> deletedRecords = new List<String>();
     global Database.QueryLocator start(Database.BatchableContext bc){
-        List<Archive_Config__mdt> acm = [SELECT Developer_Name__c, Filter__c, Duration__c FROM Archive_Config__mdt WHERE Developer_Name__c =: ObjectName ];
+        List<Archive_Config__mdt> acm = [SELECT Developer_Name__c, Filter__c, Duration__c FROM Archive_Config__mdt WHERE Developer_Name__c =: objectName ];
         return Database.getQueryLocator('SELECT Id, Name FROM ' + acm[0].Developer_Name__c + ' WHERE ' + acm[0].Filter__c 
                                         + ' AND CreatedDate >= LAST_N_DAYS: ' +acm[0].Duration__c );
     }
