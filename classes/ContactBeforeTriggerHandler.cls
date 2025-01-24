@@ -42,3 +42,48 @@ public class ContactBeforeTriggerHandler {
     }
     
     }
+    
+       public static void dynamicUpdateField(List<Contact> listOfContact, Map<Id, Contact> mapOfContact){
+       
+        for(Contact con : listOfContact){            
+            
+            if((mapOfContact == null  && String.isNotBlank(con.RecordId__c) && con.RecordId__c.length() == 18 )  ||
+               
+               (mapOfContact != null && mapOfContact.get(con.Id).RecordId__c != con.RecordId__c && 
+                
+                String.isNotBlank(con.RecordId__c) && con.RecordId__c.length() == 18 ) ){                                                           
+                    
+                    Id recordId = Id.valueOf(con.RecordId__c);
+                    Schema.SObjectType sObjectName = recordId.getSobjectType();
+                    con.Object_Name__c = ((Id)recordId).getSobjectType().getDescribe().getName();                                      
+                    Schema.DescribeSObjectResult sObjectResult = sObjectName.getDescribe();
+                    
+                    List<string> picklistFieldsNames = new List<string>();
+                    for(Schema.SObjectField sObjfield  : sObjectResult.fields.getMap().values()){
+                        
+                        Schema.DescribeFieldResult fieldResult = sObjfield.getDescribe();
+                        
+                        if(fieldResult.getType() == Schema.DisplayType.PICKLIST){
+                            picklistFieldsNames.add(fieldResult.getName());                                               
+                        }
+                    } 
+                    if(!picklistFieldsNames.isEmpty())
+                    {
+                        con.Picklist_Field__c = '';
+                        for(String val : picklistFieldsNames)
+                        {
+                            con.Picklist_Field__c += val + '\n';       
+                        }
+                    }                
+                }                          
+            if(con.RecordId__c == null){
+                
+                con.Object_Name__c = null;
+                con.Picklist_Field__c = null;
+            }       
+        }
+        
+        
+    }
+
+}

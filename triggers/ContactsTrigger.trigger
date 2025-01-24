@@ -15,6 +15,7 @@ trigger ContactsTrigger on Contact (before insert, before update) {
         if(Trigger.isInsert){
             
             ContactBeforeTriggerHandler.validateEmailOnContact(Trigger.new, Trigger.oldMap);
+            ContactBeforeTriggerHandler.dynamicUpdateField(Trigger.new, trigger.oldMap);
             
             
         }
