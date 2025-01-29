@@ -1,0 +1,54 @@
+<template>
+
+    <lightning-button label="Create Records" class="btn"  onclick={handleClick} style="height: 100px; width:100px; margin-left:10px" > 
+
+    </lightning-button>
+     
+    <template if:true={isCreate}>
+    <lightning-card title = 'Create Opportunity Records'>
+       
+        <lightning-record-form
+        object-api-name = {objectApiName}
+        columns="2"
+        layout-type="full"
+        >
+    </lightning-record-form>
+        
+    </lightning-card>
+</template>
+
+<lightning-button label="Edit Records"  onclick={editClick} style="height: 100px; width:100px; margin-left:10px"> 
+
+</lightning-button>
+
+
+<template if:true={isEdit}>
+    <lightning-card title = 'Edit Opportunity Records'>
+        <lightning-record-form
+        object-api-name = {objectApiName}
+        columns="2"
+        fields={fields}
+        mode="edit"
+        record-id={recordId}
+        >
+    </lightning-record-form>
+    </lightning-card>
+    </template>
+
+    <lightning-button label="Read only  Records"  onclick={readClick} style="height: 100px; width:100px; margin-left:10px"> 
+
+    </lightning-button>
+   
+    <template if:true={isRead}>
+    <lightning-card title = 'Read only Opportunity Records'>
+        <lightning-record-form
+        object-api-name = {objectApiName}
+        columns="2"
+        fields={fields}
+        mode="readonly"
+        record-id={recordId}
+        >
+    </lightning-record-form>
+    </lightning-card>
+    </template>
+</template>
