@@ -1,0 +1,34 @@
+<template>
+
+    <lightning-card title="Account Information">
+       <lightning-record-view-form 
+       object-api-name ={objectApiName}
+       record-id={recordId}
+       > 
+        <lightning-output-field field-name={fieldName}></lightning-output-field>
+        <lightning-output-field field-name={fieldNumber}></lightning-output-field>
+        <lightning-output-field field-name={fieldPhone}></lightning-output-field>
+
+    </lightning-record-view-form>
+    </lightning-card>
+    <lightning-button label="Create Contact" variant="brand" style="width:250px" onclick={handlerClick} ></lightning-button>
+    
+    <template if:true={isInsert}> 
+        <lightning-record-edit-form 
+        object-api-name = "Contact"
+            columns="2"
+            fields={fields}
+        > 
+        <lightning-input-field field-name={firstName}></lightning-input-field>
+        <lightning-input-field field-name={lastName}></lightning-input-field>
+        <lightning-input-field field-name={fieldPhone}></lightning-input-field>
+        <lightning-input-field field-name={fieldEmail}></lightning-input-field>
+        <lightning-input-field field-name="AccountId" value ={recordId}></lightning-input-field>
+        <div class="slds-align_absolute-center">
+            <lightning-button class="slds-m-right_x-large" label="Save" variant="brand" type="submit"  onclick={clickhandler}></lightning-button>
+        
+            <lightning-button label="Cancel" variant="brand"  onclick={clickcancelhandler} ></lightning-button>
+        </div>
+        </lightning-record-edit-form>
+    </template>
+</template>
