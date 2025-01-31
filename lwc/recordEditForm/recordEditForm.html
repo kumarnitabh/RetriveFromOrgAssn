@@ -1,0 +1,27 @@
+<template>
+    <lightning-card title="Record Edit Page ">
+        <lightning-record-edit-form 
+        onsuccess ={handlesuccess}
+        
+        object-api-name ={objectApiName}
+        density = "Compact"
+        >
+        <lightning-input-field field-name="Id" value ={opportunityId}> </lightning-input-field>
+        <lightning-input-field field-name={namefield}> </lightning-input-field>
+        <lightning-input-field field-name={accountnamefield}> </lightning-input-field>
+        <lightning-input-field field-name={amountfield}> </lightning-input-field>
+        <lightning-input-field field-name={stagefield}> </lightning-input-field>
+        <lightning-input-field field-name={closeddatefield}> </lightning-input-field>
+        <lightning-input-field field-name={revenuefield}> </lightning-input-field>
+
+        <lightning-button label="Save" variant="brand" type="Submit"> 
+
+        </lightning-button>
+
+    </lightning-record-edit-form>
+            
+    </lightning-card>
+
+    
+    
+</template>
