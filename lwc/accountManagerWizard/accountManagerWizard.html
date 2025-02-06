@@ -1,0 +1,56 @@
+<template>
+
+<lightning-button label="Account Manager Wizard" onclick={accountManagerWizard}></lightning-button>
+
+<div if:true={isClick}> 
+    
+<lightning-card title = 'Account Records'>  
+    <lightning-record-view-form
+    record-id={recordId}
+    object-api-name="Account"  
+>   
+     <lightning-layout density="compact">
+            <lightning-layout-item size="12">
+            <lightning-output-field field-name="Name" ></lightning-output-field>
+            <lightning-output-field field-name="Description"></lightning-output-field>
+            <lightning-output-field field-name="OwnerId"></lightning-output-field>
+            <p>Number of Contact: {contacts.length}</p>
+        </lightning-layout-item>
+    </lightning-layout> 
+</lightning-record-view-form>
+</lightning-card>
+
+<lightning-card>
+<lightning-layout>
+    <lightning-layout-item flexibility="auto" size="8"  padding="horizontal-medium">
+        <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+
+            <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search">
+            </lightning-input>
+        </div>
+    </lightning-layout-item>
+    
+
+    <lightning-layout-item flexibility="auto" size="4"  padding="horizontal-medium">
+        <div class="custom-box slds-box slds-p-around_medium slds-text-align_center">
+            <lightning-button label="Create new Contact" onclick={contactCreate} class="slds-m-left_x-small"></lightning-button>
+        <div if:true={isCreate}> 
+        <lightning-card title = 'Create Contact'>
+            <c-contact-save-form parent-id ={recordId} onsenddata={handleChildData}> </c-contact-save-form>
+        </lightning-card>
+        </div>
+                </div>
+            </lightning-layout-item>
+        </lightning-layout>
+        </lightning-card>
+
+        <lightning-card title = 'Related Contact'>
+            <lightning-datatable
+            key-field="id"
+            data={filteredContacts}
+            columns={columns}>
+        </lightning-datatable>
+        </lightning-card>
+
+</div>  
+</template>
