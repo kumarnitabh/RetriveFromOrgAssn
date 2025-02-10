@@ -13,6 +13,7 @@ export default class AccountManagers extends LightningElement {
 
 	column = columns;
 	@track accounts;
+	error;
 	
 	connectedCallback(){
 		this.fetchAccount();
