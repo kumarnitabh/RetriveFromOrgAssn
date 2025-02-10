@@ -12,9 +12,9 @@ const columns = [
 
 export default class AccountManagerFetch extends LightningElement {
 
-column = columns;
+    column = columns;
     @track accounts;
-    
+    error;
     @wire (getAccounts)
     wiredAccounts({data, error}){
     if(data) {
@@ -25,7 +25,4 @@ column = columns;
         this.error = error;
     }
 }
-
-
-
 }
