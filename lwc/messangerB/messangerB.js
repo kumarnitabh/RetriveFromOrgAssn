@@ -6,9 +6,9 @@ export default class MessangerB extends LightningElement {
 
     @wire(MessageContext)
     messageContext;
-    @track texts;
+    texts;
 
-    @track name;
+    name;
     sendMessage(event){
         var inp=this.template.querySelector("lightning-input");
         this.name=inp.value;
