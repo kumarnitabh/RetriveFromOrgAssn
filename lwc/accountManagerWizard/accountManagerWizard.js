@@ -13,7 +13,6 @@ export default class AccountManagerWizard extends LightningElement {
     @track contacts = [];
     @track filteredContacts = [];
     wiredResult;
-    draftValues = [];
 
     @wire (fetchContact , {accId : '$recordId'})
     wiredContacts(Result){
