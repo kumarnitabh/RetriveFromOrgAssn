@@ -1,12 +1,13 @@
 import { LightningElement, track, api } from 'lwc';
-import addContact from '@salesforce/apex/CreateContact.addContact';
+import addContact from '@salesforce/apex/LWCContactController.createContact';
 import {ShowToastEvent} from 'lightning/platformShowToastEvent';
 
 export default class ContactSaveForm extends LightningElement {
     @api parentId;
+    @api create;
     @track getContactRecord={
         FirstName : '',
-        LastName : '',
+        LastName : '', 
         Email : '',
         AccountId : '',
     };
@@ -20,8 +21,16 @@ export default class ContactSaveForm extends LightningElement {
     emailChange(event){
         this.getContactRecord.Email = event.target.value;
     }
+    handleCancelClick(){
+        const event = new CustomEvent('canceldata', {
+
+            windows : false,
+    });
+    this.dispatchEvent(event);
+}
+    
     handleSaveClick(){
-        addContact({contactToInsert:this.getContactRecord})
+        addContact({contactRecord:this.getContactRecord})
         .then(result => {
             const event1 = new ShowToastEvent({
                 title: 'Contact created',
