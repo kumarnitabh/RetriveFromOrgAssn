@@ -2,18 +2,19 @@ import { LightningElement, track, api, wire } from 'lwc';
 import fetchContact from '@salesforce/apex/RelatedContact.fetchContact';
 import { refreshApex } from '@salesforce/apex';
 
+columns = [ { label: 'FirstName', fieldName: 'FirstName', type: 'text' }, 
+                 { label: 'LastName', fieldName: 'LastName', type: 'text' },
+                 { label: 'Email', fieldName: 'Email', type: 'mail' },
+                 { label: 'Phone', fieldName: 'Phone', type: 'phone' }];
 export default class AccountManagerWizard extends LightningElement {
 
     @api recordId;
     searchKey ='';
     @track contacts = [];
     @track filteredContacts = [];
-    @track wiredResult;
-    columns = [ { label: 'FirstName', fieldName: 'FirstName', type: 'text' }, 
-                 { label: 'LastName', fieldName: 'LastName', type: 'text' },
-                 { label: 'Email', fieldName: 'Email', type: 'mail' },
-                 { label: 'Phone', fieldName: 'Phone', type: 'phone' }
-    ];
+    wiredResult;
+    draftValues = [];
+
     @wire (fetchContact , {accId : '$recordId'})
     wiredContacts(Result){
         this.wiredResult = Result;
@@ -48,17 +49,8 @@ export default class AccountManagerWizard extends LightningElement {
             this.filteredContacts = [...this.contacts]; 
         }
 }
-
-    isClick = false;
     isCreate = false;
     isRelated = false;
-    accountManagerWizard(){
-        if(this.isClick == true){
-            this.isClick =false;
-        }else{
-            this.isClick =true;
-        }
-    }
     contactCreate(){
         if(this.isCreate == true){
             this.isCreate =false;
@@ -66,10 +58,16 @@ export default class AccountManagerWizard extends LightningElement {
             this.isCreate =true;
         }
     }
+    get isNoContactToshow(){
+        return this.filteredContacts.length === 0 && this.searchKey !== '';
+    }
     handleChildData(event) {
         this.isCreate = event.detail.created; 
         if(event.detail.recordCreated === 'Yes'){
             refreshApex(this.wiredResult);
         }
+    }
+    childData(event){
+        this.isCreate = event.windows;
     }
 }
