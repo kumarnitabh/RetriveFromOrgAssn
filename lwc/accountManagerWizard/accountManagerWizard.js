@@ -1,11 +1,12 @@
 import { LightningElement, track, api, wire } from 'lwc';
-import fetchContact from '@salesforce/apex/RelatedContact.fetchContact';
+import fetchContact from '@salesforce/apex/LWCContactController.fetchContactDetails';
 import { refreshApex } from '@salesforce/apex';
 
 columns = [ { label: 'FirstName', fieldName: 'FirstName', type: 'text' }, 
-                 { label: 'LastName', fieldName: 'LastName', type: 'text' },
-                 { label: 'Email', fieldName: 'Email', type: 'mail' },
-                 { label: 'Phone', fieldName: 'Phone', type: 'phone' }];
+    { label: 'LastName', fieldName: 'LastName', type: 'text'},
+    { label: 'Email', fieldName: 'Email', type: 'mail'},
+    { label: 'Phone', fieldName: 'Phone', type: 'phone'}];
+
 export default class AccountManagerWizard extends LightningElement {
 
     @api recordId;
@@ -13,6 +14,7 @@ export default class AccountManagerWizard extends LightningElement {
     @track contacts = [];
     @track filteredContacts = [];
     wiredResult;
+    draftValues = [];
 
     @wire (fetchContact , {accId : '$recordId'})
     wiredContacts(Result){
@@ -41,8 +43,9 @@ export default class AccountManagerWizard extends LightningElement {
                     (contact.LastName && contact.LastName.toLowerCase().includes(searchTerm)) ||
                     (contact.Email && contact.Email.toLowerCase().includes(searchTerm)) ||
                     (contact.Phone && contact.Phone.toLowerCase().includes(searchTerm))
-                );
-            });  
+                );  
+                
+            });
         }
          else {
             this.filteredContacts = [...this.contacts]; 
@@ -57,6 +60,7 @@ export default class AccountManagerWizard extends LightningElement {
             this.isCreate =true;
         }
     }
+
     get isNoContactToshow(){
         return this.filteredContacts.length === 0 && this.searchKey !== '';
     }
@@ -68,5 +72,5 @@ export default class AccountManagerWizard extends LightningElement {
     }
     childData(event){
         this.isCreate = event.windows;
-    }
-}
+    }    
+} 
