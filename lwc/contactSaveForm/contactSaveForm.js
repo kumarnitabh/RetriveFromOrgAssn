@@ -21,7 +21,7 @@ export default class ContactSaveForm extends LightningElement {
         this.getContactRecord.Email = event.target.value;
     }
     handleSaveClick(){
-        addContact({insertContact:this.getContactRecord})
+        addContact({contactToInsert:this.getContactRecord})
         .then(result => {
             const event1 = new ShowToastEvent({
                 title: 'Contact created',
