@@ -2,11 +2,6 @@ import { LightningElement, track, api, wire } from 'lwc';
 import fetchContact from '@salesforce/apex/LWCContactController.fetchContactDetails';
 import { refreshApex } from '@salesforce/apex';
 
-columns = [ { label: 'FirstName', fieldName: 'FirstName', type: 'text' }, 
-    { label: 'LastName', fieldName: 'LastName', type: 'text'},
-    { label: 'Email', fieldName: 'Email', type: 'mail'},
-    { label: 'Phone', fieldName: 'Phone', type: 'phone'}];
-
 export default class AccountManagerWizard extends LightningElement {
 
     @api recordId;
@@ -15,6 +10,11 @@ export default class AccountManagerWizard extends LightningElement {
     @track filteredContacts = [];
     wiredResult;
     draftValues = [];
+
+    columns = [ { label: 'FirstName', fieldName: 'FirstName', type: 'text' }, 
+        { label: 'LastName', fieldName: 'LastName', type: 'text'},
+        { label: 'Email', fieldName: 'Email', type: 'mail'},
+        { label: 'Phone', fieldName: 'Phone', type: 'phone'}];
 
     @wire (fetchContact , {accId : '$recordId'})
     wiredContacts(Result){
@@ -60,7 +60,6 @@ export default class AccountManagerWizard extends LightningElement {
             this.isCreate =true;
         }
     }
-
     get isNoContactToshow(){
         return this.filteredContacts.length === 0 && this.searchKey !== '';
     }
