@@ -5,11 +5,13 @@ import {ShowToastEvent} from 'lightning/platformShowToastEvent';
 export default class ContactSaveForm extends LightningElement {
     @api parentId;
     @api create;
+
     @track getContactRecord={
         FirstName : '',
         LastName : '', 
         Email : '',
         AccountId : '',
+        leadSource: '',
     };
     firstNameChange(event){
         this.getContactRecord.FirstName = event.target.value;
@@ -23,13 +25,11 @@ export default class ContactSaveForm extends LightningElement {
     }
     handleCancelClick(){
         const event = new CustomEvent('canceldata', {
-
             windows : false,
     });
     this.dispatchEvent(event);
 }
-    
-    handleSaveClick(){
+        handleSaveClick(){
         addContact({contactRecord:this.getContactRecord})
         .then(result => {
             const event1 = new ShowToastEvent({
@@ -57,4 +57,8 @@ export default class ContactSaveForm extends LightningElement {
             this.dispatchEvent(event3);          
         });
 }
+        handleSelectedValue(event){
+            this.getContactRecord.leadSource = event.detail.value;
+
+        }
 }
