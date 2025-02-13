@@ -18,15 +18,11 @@ export default class GenericComponentPicklist extends LightningElement {
     })
     picklistValues({ data, error }) {
         if (data) {
-            console.log('Picklist Data:', JSON.stringify(data));
-
-            // Correctly assign a new array to trigger reactivity
             this.picklistOption = [
                 { label: '--None--', value: '' },
                 ...data.values.map(item => ({ label: item.label, value: item.value }))
             ];
         } else if (error) {
-            // console.error('Error fetching picklist values:', error);
         }
     }
 
