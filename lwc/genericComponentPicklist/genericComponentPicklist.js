@@ -18,20 +18,22 @@ export default class GenericComponentPicklist extends LightningElement {
     })
     picklistValues({ data, error }) {
         if (data) {
+            console.log('Picklist Data:', JSON.stringify(data));
             this.picklistOption = [
                 { label: '--None--', value: '' },
                 ...data.values.map(item => ({ label: item.label, value: item.value }))
             ];
         } else if (error) {
+            
         }
     }
 
     handleChange(event) {
-        this.value = event.detail.value;
+        this.value = event.target.value;
         this.dispatchEvent(
             new CustomEvent("selectedvalue", {
                 detail: {
-                    value: event.detail.value
+                    value: this.value
                 }
             })
         );
