@@ -1,5 +1,5 @@
 import { LightningElement, track, api } from 'lwc';
-import addContact from '@salesforce/apex/LWCContactController.createContact';
+import addContact from '@salesforce/apex/ContactController.createContact';
 import {ShowToastEvent} from 'lightning/platformShowToastEvent';
 
 export default class ContactSaveForm extends LightningElement {
