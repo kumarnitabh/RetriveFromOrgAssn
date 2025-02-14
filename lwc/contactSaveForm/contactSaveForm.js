@@ -6,31 +6,32 @@ export default class ContactSaveForm extends LightningElement {
     @api parentId;
     @api create;
 
-    @track getContactRecord={
-        FirstName : '',
-        LastName : '', 
-        Email : '',
-        AccountId : '',
-        leadSource: '',
-    };
+    @track myContact = { 'sobjectType': 'Contact' };
+
+        // set any additional fields
     firstNameChange(event){
-        this.getContactRecord.FirstName = event.target.value;
+        this.myContact.FirstName = event.target.value;
     }
     lastNameChange(event){
-        this.getContactRecord.LastName = event.target.value;
-        this.getContactRecord.AccountId = this.parentId;
+        this.myContact.LastName = event.target.value;
+        this.myContact.AccountId = this.parentId;
     }
     emailChange(event){
-        this.getContactRecord.Email = event.target.value;
+        this.myContact.Email = event.target.value;
+    }
+    handleSelectedValue(event){
+        this.myContact.LeadSource = event.detail.value;
+
     }
     handleCancelClick(){
         const event = new CustomEvent('canceldata', {
+
             windows : false,
     });
     this.dispatchEvent(event);
 }
-        handleSaveClick(){
-        addContact({contactRecord:this.getContactRecord})
+    handleSaveClick(){
+        addContact({contactRecord : this.myContact})
         .then(result => {
             const event1 = new ShowToastEvent({
                 title: 'Contact created',
@@ -51,14 +52,10 @@ export default class ContactSaveForm extends LightningElement {
         .catch(error => {
             const event3 = new ShowToastEvent({
                 title: 'Error.....',
-                message: 'Email & Last Name must be compulsory and email must be in proper format ',
+                message: 'Email & Last Name must be compulsory and email must be in proper format '+error.body.message,
                 variant : 'error',
             });
             this.dispatchEvent(event3);          
         });
-}
-        handleSelectedValue(event){
-            this.getContactRecord.leadSource = event.detail.value;
-
-        }
+}       
 }
