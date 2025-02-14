@@ -1,4 +1,4 @@
-public with sharing class LWCContactController {
+public with sharing class ContactController {
     @AuraEnabled
     public static void createContact(Contact contactRecord) {
         insert contactRecord;
