@@ -7,8 +7,6 @@ export default class ContactSaveForm extends LightningElement {
     @api create;
 
     @track myContact = { 'sobjectType': 'Contact' };
-
-        // set any additional fields
     firstNameChange(event){
         this.myContact.FirstName = event.target.value;
     }
