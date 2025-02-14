@@ -1,5 +1,5 @@
 import { LightningElement, track, api, wire } from 'lwc';
-import fetchContact from '@salesforce/apex/LWCContactController.fetchContactDetails';
+import fetchContact from '@salesforce/apex/ContactController.fetchContactDetails';
 import { refreshApex } from '@salesforce/apex';
 
 export default class AccountManagerWizard extends LightningElement {
