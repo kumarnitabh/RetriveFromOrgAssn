@@ -1,0 +1,65 @@
+<template>
+    <lightning-card title="Account Records"></lightning-card>
+    <div class="slds-border_bottom"></div>
+    <lightning-record-view-form
+    record-id={recordId}
+    object-api-name="Account"  
+>   
+<lightning-layout>
+    <lightning-layout-item size="6">
+        <div class="slds-p-top_large">
+            <lightning-output-field field-name="Name" ></lightning-output-field>
+        </div>
+    </lightning-layout-item>
+    <lightning-layout-item size="6">
+        <div class="slds-p-top_large">
+            <lightning-output-field field-name="Description"></lightning-output-field>
+        </div>
+    </lightning-layout-item>
+    </lightning-layout>
+    <lightning-layout>
+    <lightning-layout-item size="6">
+        <div class="slds-p-top_large">
+            <lightning-output-field field-name="OwnerId"></lightning-output-field>
+        </div>
+    </lightning-layout-item>
+    <lightning-layout-item size="6">
+        <div class="slds-p-top_large">
+            Number of Contact: {contacts.length}
+        </div>
+    </lightning-layout-item>
+</lightning-layout>
+</lightning-record-view-form>
+<div class="slds-border_bottom"></div>
+
+<lightning-card>
+<lightning-layout>
+    <lightning-layout-item flexibility="auto" size="8"  padding="horizontal-medium">
+            <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small" label="Search">
+            </lightning-input>
+    </lightning-layout-item>
+
+    <lightning-layout-item flexibility="auto" size="3"  padding="horizontal-medium">
+        <div class = "slds-align_absolute-center"> 
+        <lightning-button  label="Create Contact" onclick={contactCreate} ></lightning-button>
+        <div if:true={isCreate}> 
+            <c-contact-save-form parent-id ={recordId} onsenddata={handleChildData} oncanceldata ={childData}> </c-contact-save-form>
+        </div>
+    </div>
+        </lightning-layout-item>
+        </lightning-layout>
+        </lightning-card>
+
+        <lightning-card title = 'Related Contact'>
+            <lightning-datatable
+            key-field="id"
+            data={filteredContacts}
+            columns={columns}>
+        </lightning-datatable>
+
+        <template if:true={isNoContactToshow}>
+            <p class="slds-text-align_center slds-text-heading_large slds-p-around_medium">
+             <b>No Contact Found</b></p>
+        </template>
+        </lightning-card>
+</template>
