@@ -9,7 +9,7 @@
  * 
  */
 
-trigger ContactsTrigger on Contact (before insert, before update) {
+trigger ContactsTrigger on Contact (before insert, after insert) {
     
     if(Trigger.isBefore){
         if(Trigger.isInsert){
@@ -17,6 +17,13 @@ trigger ContactsTrigger on Contact (before insert, before update) {
             ContactBeforeTriggerHandler.validateEmailOnContact(Trigger.new, Trigger.oldMap);
             ContactBeforeTriggerHandler.dynamicUpdateField(Trigger.new, trigger.oldMap);
             
+            
+        }
+    }
+    
+    if(trigger.isAfter){
+        if(trigger.isInsert){
+            ContactsTriggerHandler.validateAddresses(trigger.new); 
             
         }
     }
