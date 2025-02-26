@@ -1,4 +1,20 @@
 public class ContactsTriggerHandler {
+
+    public static void validateAddresses(List<Contact> conList){
+          
+        Set<Id> conId = new Set<Id>();
+      
+      if(!conList.isEmpty()){
+          
+          for(Contact con : conList){
+              if(con.MailingCity != null && con.MailingStreet != null){
+                  conId.add(con.Id);
+              }
+          }
+          smartyApiAddress.validateAddressWithApi(conId);
+      }
+  }
+  
     
     public static void checkEmailInAccountDomain (List<Contact> newListOfContacts){
         
